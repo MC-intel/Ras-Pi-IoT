@@ -1,0 +1,11 @@
+/* chart-styles.css */
+.chart-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#myChart {
+    max-width: 1200px;
+    height: 800px;
+}
+
