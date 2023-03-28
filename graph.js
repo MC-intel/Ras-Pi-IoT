@@ -10,10 +10,10 @@ var myChart = new Chart(ctx, {
             borderColor: 'rgba(255, 99, 132, 1)', // line color
             borderWidth: 1, // line width
             pointRadius: 3, // point radius
-            pointBackgroundColor: 'black', // point background color
-            pointBorderWidth: 2, // point border width
-            pointHoverRadius: 6, // point hover radius
-            pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)' // point hover background color
+            pointBackgroundColor: 'black',
+            pointBorderWidth: 2, 
+            pointHoverRadius: 6, 
+            pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)' 
         }]
     },
     options: {
@@ -47,7 +47,7 @@ var myChart = new Chart(ctx, {
     }
 });
 
-// Use fetch API or XMLHttpRequest to load json from file
+// Use fetch
 fetch("/data.json")
 .then(function(response) {
     return response.json();
@@ -59,7 +59,6 @@ fetch("/data.json")
     myChart.update();
 });
 
-// ... chart code ...
 
 async function updateChart() {
     try {
